@@ -3,24 +3,35 @@ import { getTechTools } from '../utils/data';
 
 const Skills = () => {
   const techTools = getTechTools()
+  const frontEndTools = Object.values(techTools).filter(((techTool => techTool.categories.includes('front-end'))))
+  const backEndTools = Object.values(techTools).filter(((techTool => techTool.categories.includes('back-end'))))
+  const miscTools = Object.values(techTools).filter(((techTool => techTool.categories.includes('misc'))))
 
-  console.log(techTools)
+  console.log(frontEndTools)
 
   return (
-    <div className="text-center">
-      <h1 className="text-4xl font-medium">Skills</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto sequi laboriosam quis alias nihil in pariatur labore veritatis? Nulla nam repellendus numquam non velit, asperiores magnam doloremque vero voluptatum alias!</p>
+    <div className="text-center p-6">
+      <h1 className="text-4xl font-medium mb-5">Skills</h1>
 
-      <div className="flex flex-wrap items-center space-x-3">
-        {Object.values(techTools).map((techTool) => {
-          return (
-            <div className="flex flex-col justfiy-center items-center bg-white text-black p-1 rounded-lg">
-              <img src={techTool.icon} alt="" className="h-9 w-9" />
-              <div>{techTool.name}</div>
+      <div className="grid grid-cols-3 gap-3">
+        {[frontEndTools, backEndTools, miscTools].map((tools) => (
+          <div>
+            <div className="text-2xl">Front-end</div>
+            <div className="flex justify-center gap-4 flex-wrap bg-gray-800 p-6 rounded-xl h-full">
+              {Object.values(tools).map((techTool) => {
+                return (
+                  <div className="flex flex-col justify-center items-center p-1 rounded-lg">
+                    <i className={`${techTool.icon} text-white text-4xl`}></i>
+                    <div>{techTool.name}</div>
+                  </div>
+                )
+              })}
             </div>
-          )
-        })}
+          </div>
+        ))}
       </div>
+
+
 
     </div>
   )

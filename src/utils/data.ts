@@ -11,59 +11,73 @@ export const getTechTools = () => {
   return {
     'html-5': {
       name: 'HTML5',
-      icon: '/assets/html.svg'
+      icon: 'devicon-html5-plain colored',
+      categories: ['front-end']
     },
     'css-3': {
       name: 'CSS3',
-      icon: '/assets/css-3.svg'
+      icon: 'devicon-css3-plain colored',
+      categories: ['front-end']
     },
     'bootstrap': {
       name: 'Bootstrap',
-      icon: '/assets/bootstrap.svg'
+      icon: 'devicon-bootstrap-plain colored',
+      categories: ['front-end']
     },
     'express': {
       name: 'Express',
-      icon: '/assets/express.svg'
+      icon: 'devicon-express-original colored',
+      categories: ['back-end']
     },
     'git': {
       name: 'Git',
-      icon: '/assets/git-icon.svg'
+      icon: 'devicon-git-plain colored',
+      categories: ['misc']
     },
     'javascript': {
       name: 'JavaScript',
-      icon: '/assets/javascript.svg'
+      icon: 'devicon-javascript-plain colored',
+      categories: ['front-end', 'back-end']
     },
     'mongodb': {
       name: 'MongoDB',
-      icon: '/assets/mongodb.svg'
+      icon: 'devicon-mongodb-plain colored',
+      categories: ['back-end']
     },
     'mysql': {
       name: 'MySQL',
-      icon: '/assets/mysql.svg'
+      icon: 'devicon-mysql-plain colored',
+      categories: ['back-end']
     },
     'npm': {
       name: 'NPM',
-      icon: '/assets/npm.svg'
+      icon: 'devicon-npm-original-wordmark colored',
+      categories: ['misc']
     },
     'postgresql': {
       name: 'PostgreSQL',
-      icon: '/assets/postgresql.svg'
+      icon: 'devicon-postgresql-plain colored',
+      categories: ['back-end']
     },
     'python': {
       name: 'Python',
-      icon: '/assets/python.svg'
+      icon: 'devicon-python-plain colored',
+      categories: ['back-end']
     },
     'tailwindcss': {
       name: 'TailwindCSS',
-      icon: '/assets/tailwindcss-icon.svg'
+      icon: 'devicon-tailwindcss-plain colored',
+      categories: ['front-end']
     },
     'typescript': {
       name: 'TypeScript',
-      icon: '/assets/typescript-icon.svg'
+      icon: 'devicon-typescript-plain colored',
+      categories: ['front-end', 'back-end']
     },
     'webpack': {
       name: 'Webpack',
-      icon: '/assets/webpack.svg'
+      icon: 'devicon-webpack-plain colored',
+      categories: ['misc']
     }
   }
 }
