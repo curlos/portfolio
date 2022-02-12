@@ -1,10 +1,16 @@
 import React from 'react';
+import { getProjects } from '../utils/data';
+import ProjectCard from './ProjectCard';
 
 const Projects = () => {
+  const projects = getProjects()
+
   return (
-    <div className="text-center">
-      <h1 className="text-4xl font-medium">Projects</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto sequi laboriosam quis alias nihil in pariatur labore veritatis? Nulla nam repellendus numquam non velit, asperiores magnam doloremque vero voluptatum alias!</p>
+    <div className="text-center p-5">
+      <h1 className="text-4xl font-medium mb-5">Projects</h1>
+      <div className="grid grid-cols-3 gap-2">
+        {projects.map((project) => <ProjectCard project={project} />)}
+      </div>
     </div>
   )
 };

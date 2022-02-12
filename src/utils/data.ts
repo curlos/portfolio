@@ -39,6 +39,26 @@ export const getTechTools = () => {
       icon: 'devicon-javascript-plain colored',
       categories: ['front-end', 'back-end']
     },
+    'react': {
+      name: 'React',
+      icon: 'devicon-react-original colored',
+      categories: ['front-end']
+    },
+    'nextjs': {
+      name: 'Next.js',
+      icon: 'devicon-nextjs-original-wordmark',
+      categories: ['front-end', 'back-end']
+    },
+    'redux': {
+      name: 'React Redux',
+      icon: 'devicon-redux-original colored',
+      categories: ['front-end']
+    },
+    'vue': {
+      name: 'VueJS',
+      icon: 'devicon-vuejs-plain colored',
+      categories: ['front-end']
+    },
     'mongodb': {
       name: 'MongoDB',
       icon: 'devicon-mongodb-plain colored',
@@ -57,6 +77,16 @@ export const getTechTools = () => {
     'postgresql': {
       name: 'PostgreSQL',
       icon: 'devicon-postgresql-plain colored',
+      categories: ['back-end']
+    },
+    'firebase': {
+      name: 'Firebase',
+      icon: 'devicon-firebase-plain colored',
+      categories: ['back-end']
+    },
+    'nodejs': {
+      name: 'NodeJS',
+      icon: 'devicon-nodejs-plain colored',
       categories: ['back-end']
     },
     'python': {
@@ -85,25 +115,28 @@ export const getTechTools = () => {
 export const getProjects = () => {
   return [
     {
-      name: 'Twitter 2.0',
-      techStack: ['React', 'NextJS', 'TypeScript', 'TailwindCSS', 'Recoil', 'Firebase'],
-      description: '',
-      liveUrl: 'http://twitter-clone-curlos.vercel.app/',
-      sourceCodeUrl: 'https://github.com/curlos/twitter-2.0'
-    },
-    {
       name: 'Sneaker Palace',
       techStack: ['React', 'TypeScript', 'TailwindCSS', 'Redux', 'NodeJS', 'Express', 'MongoDB'],
       description: 'Sneaker Palace is a responsive e-commerce site where users can buy from over 20 of the most popular sneaker brands in the world such as Nike, Jordan, Adidas, New Balance. Users can register for an account, login and browse the collection of over 10,000 shoes to look from with different filters (brand, gender, price, size, sort types) to aid a users in their search. Users can add them to their favorites, to their cart and place an order to buy sneakers. Reviews can also be posted (with pictures and ability to verify if you purchased the sneaker) to let other people know your thoughts on the sneakers you bought.',
       liveUrl: 'https://sneaker-palace.vercel.app/',
-      sourceCodeUrl: 'https://github.com/curlos/sneaker-palace'
+      sourceCodeUrl: 'https://github.com/curlos/sneaker-palace',
+      screenshots: ['/assets/sneaker_palace.png']
     },
     {
       name: 'Netflix 2.0',
       techStack: ['React', 'JavaScript', 'Bootstrap', 'Redux', 'Firebase', 'Stripe'],
       description: 'Netflix 2.0 is a responsive Netflix clone which improves upon the original by having a collection of thousands of movies and TV shows using the TMDB API which would include movies that even Netflix doesn\'t have. Movies and TV Shows can be filtered by genres and years. They can also be sorted by several options like popularity, revenue and release date. There is also three subscription plans (basic, standard, and premium) which users can subscribe to using the Stripe API.',
       liveUrl: 'https://netflix-clone-e0edc.web.app/',
-      sourceCodeUrl: 'https://github.com/curlos/netflix-clone'
+      sourceCodeUrl: 'https://github.com/curlos/netflix-clone',
+      screenshots: ['/assets/netflix_clone_v2.png']
+    },
+    {
+      name: 'Twitter 2.0',
+      techStack: ['React', 'NextJS', 'TypeScript', 'TailwindCSS', 'Recoil', 'Firebase'],
+      description: '',
+      liveUrl: 'http://twitter-clone-curlos.vercel.app/',
+      sourceCodeUrl: 'https://github.com/curlos/twitter-2.0',
+      screenshots: ['/assets/3.png']
     },
   ]
 }

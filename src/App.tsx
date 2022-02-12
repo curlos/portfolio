@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutMe from './components/AboutMe';
+import Footer from './components/Footer';
 import Landing from './components/Landing';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
@@ -13,6 +14,7 @@ const App = () => {
         <AboutMe />
         <Skills />
         <Projects />
+        <Footer />
       </div>
 
     </div>
