@@ -13,15 +13,15 @@ const Landing = () => {
         <div className="space-y-3 text-center h-3/4 flex flex-col justify-between">
           <div className="space-y-3">
             <h1 className="text-6xl font-bold">Carlos Martinez</h1>
-            <h2>I am a full-stack developer.</h2>
+            <h2 className="text-2xl">I am a full-stack developer.</h2>
 
             <div className="space-x-3">
-              <i className="fab fa-github-square text-[30px]"></i>
-              <i className="fab fa-linkedin text-[30px]"></i>
+              <i className="fab fa-github-square text-[40px]"></i>
+              <i className="fab fa-linkedin text-[40px]"></i>
             </div>
 
             <div className="mb-5">
-              <button className="bg-blue-500 px-4 py-2 rounded-full">
+              <button className="bg-blue-500 text-xl px-4 py-2 rounded-full hover:bg-blue-600">
                 Hire me
               </button>
             </div>
