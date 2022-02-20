@@ -6,9 +6,9 @@ const Projects = () => {
   const projects = getProjects()
 
   return (
-    <div className="text-center p-5">
+    <div className="text-center p-10 md:p-5">
       <h1 className="text-4xl font-medium mb-5">Projects</h1>
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10">
         {projects.map((project) => <ProjectCard project={project} />)}
       </div>
     </div>

@@ -2,11 +2,16 @@ import React from 'react';
 import Navbar from './Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Landing = () => {
+interface Props {
+  isOpen: any,
+  setIsOpen: any
+}
+
+const Landing = ({ isOpen, setIsOpen }: Props) => {
   return (
     <div className="h-screen flex flex-col">
       <div>
-        <Navbar />
+        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
 
       <div className="flex-1 flex justify-center items-end">

@@ -16,7 +16,7 @@ const ProjectCard = ({ project }: Props) => {
       <div className="flex-1 flex flex-col justify-between p-7 space-y-2">
         <div className="space-y-2">
           <div className="text-xl font-bold">{project.name}</div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <div className="text-gray-400">Tech Stack: </div>
             <div className="space-x-2">
               {project.techStack.map((techTool: string) => {
@@ -27,6 +27,8 @@ const ProjectCard = ({ project }: Props) => {
                   return (
                     <i className={`${techTools[techTool.toLowerCase()].icon} text-white text-2xl`}></i>
                   )
+                } else {
+                  return null
                 }
               })}
             </div>
@@ -37,11 +39,11 @@ const ProjectCard = ({ project }: Props) => {
           </div>
         </div>
 
-        <div className="flex gap-3">
+        <div className="space-y-3 lg:space-y-0 lg:flex gap-3">
           <a href={project.liveUrl}
             target="_blank" rel="noreferrer"
             className="flex items-center space-x-2">
-            <button className="bg-blue-500 text-white p-2 px-4 rounded-full space-x-2 hover:bg-blue-600">
+            <button className="bg-blue-500 text-white p-2 px-4 rounded-full space-x-2 hover:bg-blue-600 w-full">
               <i className="fas fa-eye"></i>
               <span className="">View Demo</span>
             </button>
@@ -50,7 +52,7 @@ const ProjectCard = ({ project }: Props) => {
           <a href={project.sourceCodeUrl}
             target="_blank" rel="noreferrer"
             className="flex items-center space-x-2">
-            <button className="bg-blue-500 text-white p-2 px-4 rounded-full space-x-2 hover:bg-blue-600">
+            <button className="bg-blue-500 text-white p-2 px-4 rounded-full space-x-2 hover:bg-blue-600 w-full">
               <i className="fas fa-code"></i>
               <span className="">View Code</span>
             </button>

@@ -13,10 +13,10 @@ const Skills = () => {
     <div className="text-center p-6">
       <h1 className="text-4xl font-medium mb-5">Skills</h1>
 
-      <div className="grid grid-cols-3 gap-3">
-        {[frontEndTools, backEndTools, miscTools].map((tools) => (
-          <div>
-            <div className="text-2xl">Front-end</div>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+        {[frontEndTools, backEndTools, miscTools].map((tools, i) => (
+          <div className="my-2">
+            <div className="text-2xl mb-2">{['Front-end', 'Back-end', 'Miscalleneous'][i]}</div>
             <div className="flex justify-center gap-4 flex-wrap bg-gray-800 p-6 rounded-xl h-full">
               {Object.values(tools).map((techTool) => {
                 return (
