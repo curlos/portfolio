@@ -2,16 +2,17 @@ import React from 'react';
 import { getTechTools } from '../utils/data';
 
 interface Props {
-  project: any
+  project: any,
+  setOpenProject: any
 }
 
-const ProjectCard = ({ project }: Props) => {
+const ProjectCard = ({ project, setOpenProject }: Props) => {
   const techTools: any = getTechTools()
   console.log(techTools)
   console.log(project)
 
   return (
-    <div className="bg-gray-800 rounded-2xl text-left flex flex-col">
+    <div className="bg-gray-800 rounded-2xl text-left flex flex-col" onClick={setOpenProject(project.name)}>
       <img src={project.screenshots[0]} alt="Netflix 2.0" className="rounded-t-2xl"></img>
       <div className="flex-1 flex flex-col justify-between p-7 space-y-2">
         <div className="space-y-2">

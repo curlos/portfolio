@@ -6,10 +6,12 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Sidenav from './components/Sidenav';
 import './styles/globals.css'
+import { ProjectModal } from './components/ProjectModal';
 
 const App = () => {
 
   const [isOpen, setIsOpen] = useState(false)
+  const [openProject, setOpenProject] = useState('')
 
   return (
     <div className="bg-gray-900 text-white">
@@ -17,9 +19,11 @@ const App = () => {
       <div className="space-y-10">
         <AboutMe />
         <Skills />
-        <Projects />
+        <Projects setOpenProject={setOpenProject} />
         <Footer />
       </div>
+
+      <ProjectModal openProject={openProject} setOpenProject={setOpenProject} />
 
       <Sidenav isOpen={isOpen} setIsOpen={setIsOpen} />
 

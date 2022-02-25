@@ -14,27 +14,27 @@ const Navbar = ({ isOpen, setIsOpen }: Props) => {
       </div>
 
       <div className="space-x-5 hidden md:flex">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 cursor-pointer">
           <i className="fas fa-home"></i>
           <span>Home</span>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 cursor-pointer">
           <i className="fas fa-user"></i>
           <span>About Me</span>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 cursor-pointer">
           <i className="fas fa-tools"></i>
           <span>Skills</span>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 cursor-pointer">
           <i className="fas fa-boxes"></i>
           <span>Projects</span>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 cursor-pointer">
           <i className="fas fa-pen-alt"></i>
           <span>Contact Me</span>
         </div>
